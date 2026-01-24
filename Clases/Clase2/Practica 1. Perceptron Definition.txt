@@ -1,0 +1,28 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+#DEFINIR PERCEPTRÓN 1
+
+def neurona1(x1,x2,x3): #Dentrita
+    w1=0.25 #Soma
+    w2=0.4 #Soma
+    w3=0.35 #Soma
+    bias=1.25 #Soma
+    z=w1*x1+w2*x2+w3*x3+bias #Soma
+    a1=max(0,z) #Axón
+    return a1
+
+neurona1(1,5,6)
+
+#DEFINIR PERCEPTRÓN 2 QUE TOMA EL OUTPUT DEL PERCEPTRÓN 1
+
+def neurona2(a1): #Dentrita
+    w1=0.3 #Soma
+    bias=0.85 #Soma
+    z=a1*w1+bias #Soma
+    a2=max(0,z) #Axón
+    return a2
+
+a1=neurona1(1,5,6)
+neurona2(a1)

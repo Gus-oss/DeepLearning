@@ -1,0 +1,80 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+####The sigmoid function
+####################################################
+####################################################
+
+def sigmoid(x):
+ return 1/ (1+np.exp(-x))
+
+# setting the x - coordinates
+x = np.arange(-10,10)
+# setting the corresponding y - coordinates
+
+y =sigmoid(x)
+ 
+# plotting the points
+plt.plot(x, y)
+ 
+# function to show the plot
+plt.show()
+
+####The tanh function
+####################################################
+####################################################
+
+def tanh(x):
+ numerator = 1-np.exp(-2*x)
+ denominator = 1+np.exp(-2*x)
+ return numerator/denominator
+
+
+####The RELU function
+####################################################
+####################################################
+
+def RELU(x):
+ return max(0,x)
+
+###The leaky ReLU function
+####################################################
+####################################################
+
+def leakyRELU(x):
+ if x<0:
+  a=0.01*x
+ else:
+  a=x
+ return a
+
+###The Exponential linear unit function
+####################################################
+####################################################
+
+def ELU(x):
+ if x<0:
+    a=(0.01*(np.exp(x)-1))
+ else:
+    a=x
+ return a
+
+###The Swiss Function
+####################################################
+####################################################
+
+def swish(x):
+ return 2*x*sigmoid(0.5*x)
+
+###The softmax function
+####################################################
+####################################################
+
+def softmax(x):
+ return np.exp(x) / np.exp(x).sum(axis=0)
+
+
+
+
+
