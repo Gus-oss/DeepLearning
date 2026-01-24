@@ -9,5 +9,6 @@ Este es el repositorio de la materia de Aprendizaje Profundo de la Maestria de C
 
 **Tareas**
 - [Clases](Clases): En esta carpeta se pondrán el material de cada clase del curso (material, libros, datasets, etc).
+- [Galeria](Galeria): En esta carpeta se encuentran todas las imagnes que se necesitan para la creacion de notas en los libros de Python. 
 - [Codigos](Codigos): En esta carpeta se pondrán los códigos de las tareas que se encarguen durante el curso.
   - [Perceptron](Codigos\perceptron.ipynb): Tarea encargada el día 23/01/2026. Realizar el modelo de un perceptron mediante lotes de un conjunto de datos. 
