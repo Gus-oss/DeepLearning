@@ -12,4 +12,4 @@ Este es el repositorio de la materia de Aprendizaje Profundo de la Maestria de C
 - [Tareas](Tareas): En esta carpeta se pondran todas las tareas que se realizaran en el curso.
   - [Tarea1.Parte1](Tareas\Perceptros_Lotes.ipynb): Implementación de un perceptrón con 15 lotes de 100.
 - [Notebooks](Notebooks): En esta carpeta se pondrán los notebooks que realice como notas para el curso.
-  - [Perceptron](Codigos\Perceptron_Clase2.ipynb): Libro de trabajo de la clase 2. 
+  - [Clase3](Notebooks\Clase2.ipynb): Libro de trabajo de la clase 2. 
