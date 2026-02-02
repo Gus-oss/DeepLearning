@@ -1,0 +1,85 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Definir función sigmoide
+def sigmoid(x):
+ return 1/ (1+np.exp(-x))
+
+def sigmoidPrime(z):
+    return sigmoid(z) * (1 - sigmoid(z))
+
+#Inicializar los pesos de las 4 neuronas de la capa oculta.
+
+Wxh=np.array([[0.2,0.65,0.45,0.34],
+             [0.8,0.35,0.55,0.21]])
+print(Wxh)
+
+
+
+#Inicializar pesos en la neurona de salida.
+
+Why=np.array([[0.15],
+             [0.3],
+             [0.45],
+             [0.1]])
+print(Why)
+
+
+#Inicializar sesgos y valor real "y"
+
+bh=np.array([[0.2,0.15,0.45,0.1]])
+by = np.array([[0.05]])
+y = np.array([[3]])
+print(bh)
+
+#Input X
+X = np.array([[0.5, -1.4]])
+
+
+#Definir la forward propagation.
+
+def forward_prop(X):
+ z1 = np.dot(X,Wxh) + bh
+ a1 = sigmoid(z1)
+ z2 = np.dot(a1,Why) + by
+ y_hat = sigmoid(z2)
+ return y_hat
+
+
+#Definir la back propagation.
+
+def backword_prop(y_hat, z1, a1, z2,alpha):
+ global Wxh, Why
+ delta2 = np.multiply(-(y-y_hat),sigmoidPrime(z2))
+ dJ_dWhy = np.dot(a1.T, delta2)
+ delta1 = np.dot(delta2,Why.T)*sigmoidPrime(z1)
+ dJ_dWxh = np.dot(X.T, delta1)
+ Wxh = Wxh - alpha * dJ_dWxh
+ Why = Why - alpha * dJ_dWhy
+ return Wxh,Why
+
+
+#Reecalcular parámetros
+y_hat=forward_prop(X)
+z1 = np.dot(X,Wxh) + bh
+a1 = sigmoid(z1)
+z2 = np.dot(a1,Why) + by
+alpha=0.025
+
+backword_prop(y_hat, z1, a1, z2,alpha)
+
+
+#Definir fución de predicción.
+
+def pred(X):
+ z1 = np.dot(X,Wxh) + bh
+ a1 = sigmoid(z1)
+ z2 = np.dot(a1,Why) + by
+ y_hat = sigmoid(z2)
+ return y_hat
+
+
+#Input X
+X = np.array([[0.5, -1.4]])
+pred(X)
