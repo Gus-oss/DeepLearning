@@ -12,4 +12,5 @@ Este es el repositorio de la materia de Aprendizaje Profundo de la Maestria de C
 - [Tareas](Tareas): En esta carpeta se pondrán todas las tareas que se realizarán en el curso.
   - [Tarea1.Parte1](Tareas/Perceptros_Lotes.ipynb): Implementación de un perceptrón con 15 lotes de 100.
 - [Notebooks](Notebooks): En esta carpeta se pondrán los notebooks que realice como notas para el curso.
-  - [Clase2](Notebooks/Clase2.ipynb): Libro de trabajo de la clase 2.
+  - [Clase2](Notebooks/Clase2.ipynb): Libro de trabajo de la clase 2. Perceptron, propagación hacia adelante, propagación hacia atras y funciones de costos.
+  - [Clase3](Notebooks/Clase3.ipynb): Libro de trabajo de la clase 3. Capa de entrada, capa oculta y capa de salida, propagación hacia adelante y hacia atras teniendo capa oculta.
