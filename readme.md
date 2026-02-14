@@ -16,6 +16,6 @@ Este es el repositorio de la materia de Aprendizaje Profundo de la Maestria de C
   - [Tarea2](Tareas/Tarea2.ipynb): Implementación de redes neuornales a la base de datos de taxis de NYC para el mes de Enero del 2024. Tarea en conjunto utilizando big data + deep learning. 
   - [Tarea2.elephas](Tareas/Tarea2.elephas.ipynb): La misma tarea 2 pero utilizando la libreria de elephas sin necesidad de pasar por limitaciones (En proceso)
 - [Notebooks](Notebooks): En esta carpeta se pondrán los notebooks que realice como notas para el curso.
-  - [Clase2](Notebooks/Clase2.ipynb): Libro de trabajo de la clase 2. Perceptron, propagación hacia adelante, propagación hacia atras y funciones de costos.
-  - [Clase3](Notebooks/Clase3.ipynb): Libro de trabajo de la clase 3. Capa de entrada, capa oculta y capa de salida, propagación hacia adelante y hacia atras teniendo capa oculta.
-  - [Clase4](Notebooks/Clase4.ipynb): Libro de trabajo de la clase 4. Ejemplo de retiro temprano mediante Keras. Optimización de la capa oculta y el numero de neuronas dentro de ella. 
+  - [Clase2.Redes Neuronales supervisadas](Notebooks/Clase2.ipynb): Libro de trabajo de la clase 2. Perceptron, propagación hacia adelante, propagación hacia atras y funciones de costos.
+  - [Clase3. Redes Neuronales con Keras](Notebooks/Clase3.ipynb): Libro de trabajo de la clase 3. Capa de entrada, capa oculta y capa de salida, propagación hacia adelante y hacia atras teniendo capa oculta.
+  - [Clase4. Redes Neuornales no supervisadas](Notebooks/Clase4.ipynb): Libro de trabajo de la clase 4. Ejemplo de retiro temprano mediante Keras. Optimización de la capa oculta y el numero de neuronas dentro de ella. 
