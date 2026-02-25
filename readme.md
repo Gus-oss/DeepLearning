@@ -17,6 +17,7 @@ Este es el repositorio de la materia de Aprendizaje Profundo de la Maestria de C
   - [Tarea2.BigData_DeepLearning](Tareas/Tarea2.BigData_DeepLearning.ipynb): La misma tarea 2 pero utilizando rdds solamente para entrenar la red neuronal y sin hacer subgrupo de datos. 
   - [Tarea3.AprendizajeCompetitivo](Tareas/Tarea3.AprendizajeCompetitivo.ParteI.ipynb): Se implementara una red neuronal partiendo de la arquitectura establecida en [Tarea2.BigData_DeepLearning](Tareas/Tarea2.BigData_DeepLearning.ipynb).
   - [Tarea3.CNNDEF](Tareas/Tarea3.CNNDEF.ParteII.ipynb): Ejemplo visto en clase de redes neuronales enfocadas al reconocimiento de imagenes. El ajuste de tarea es realziar el aprendizaje no supervisado (es decir, que las neuronas compitan entre ellas)
+  - [Tarea4.LSTM](Tareas/Tarea4.LSTM.ipynb): En esta tarea se implemento una LSTM para la clasifiación de audio del conjunto de datos de Google Speech Commands (Mini) y se valido con prueba de audio propia. 
 - [Notebooks](Notebooks): En esta carpeta se pondrán los notebooks que realice como notas para el curso.
   - [Clase2.Redes Neuronales supervisadas](Notebooks/Clase2.ipynb): Libro de trabajo de la clase 2. Perceptron, propagación hacia adelante, propagación hacia atras y funciones de costos.
   - [Clase3. Redes Neuronales con Keras](Notebooks/Clase3.ipynb): Libro de trabajo de la clase 3. Capa de entrada, capa oculta y capa de salida, propagación hacia adelante y hacia atras teniendo capa oculta.
